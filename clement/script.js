@@ -116,6 +116,50 @@ V.init = function(){
     V.testList = document.querySelector('#test-graphiques-div').querySelector('.card-list');
     V.jeuList = document.querySelector('#jeux-div').querySelector('.card-list');
     V.linkList = document.querySelector('#links-div').querySelector('.links-list');
+
+    let cursor = document.querySelector('.div__flou');
+
+    let mouseX = 0;
+    let mouseY = 0;
+
+    document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        updateCursor();
+    });
+
+    window.addEventListener('scroll', function() {
+        updateCursor();
+    });
+
+    function updateCursor() {
+        cursor.style.left = (mouseX + window.scrollX - 20) + 'px';
+        cursor.style.top = (mouseY + window.scrollY - 20) + 'px';
+    }
+
+    document.addEventListener('mouseleave', function() {
+        cursor.style.opacity = 0;
+    });
+    
+    document.addEventListener('mouseenter', function() {
+        cursor.style.opacity = 1;
+    });
+
+    
+    window.addEventListener('mousedown', function() {
+        cursor.style.transform = 'scale(0.7)';
+        cursor.style.backdropFilter = 'blur(5px)';
+    });
+
+    window.addEventListener('mouseup', function() {
+        cursor.style.transform = 'scale(1)';
+        cursor.style.backdropFilter = 'blur(1px)';
+    });
+
+    //if desktop user
+    if (window.innerWidth > 768) {
+        cursor.classList.add('desktop');
+    }
 }
 
 let C = {}
