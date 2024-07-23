@@ -1,1 +1,1 @@
-window.location.href = "/clement";
+//window.location.href = "/clement";
