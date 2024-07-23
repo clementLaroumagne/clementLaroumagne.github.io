@@ -1,0 +1,912 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*.header__item{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    flex-direction: space-around;
+}
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    cursor: url("data/gary.png"),auto;
+    
+}
+
+body{
+
+    background-image: url('data/sable.png');
+    background-repeat: repeat;
+    position: relative;
+    list-style: none;
+    overflow-x: hidden;
+    font-family: "Poppins";
+    color: white;
+
+}
+.h1__bob{
+    display:none;
+}
+
+::-webkit-scrollbar{
+
+    width: 11px;  
+    background-color: #FCFCE3;
+
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 40px;
+    background: linear-gradient(#FFD464,#FFB800);
+    box-shadow: 0 -100vh 0 99vh #FFD464;
+    
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background: linear-gradient(#FFD464,#9460E6);
+    
+}
+
+
+/* //////////////////header/////////////////// */
+
+.header{
+    width: 100%;
+    
+}
+
+.logomenu{
+    position: fixed;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    z-index: 3;
+
+}
+
+.header__ul{
+    position: fixed;
+    padding-left:0;
+    top: 0;
+    left:0;   
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    align-items: end;
+    z-index: 3;
+}
+
+.header__item{
+    padding-top: 1rem;
+    padding-left: 4rem;
+    height: 80%;
+    
+    
+}
+
+.header__item:hover{
+
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+
+.header__village{
+    padding-right: 5rem;
+}
+
+
+.logomenu{
+
+    padding: 30px;
+
+}
+
+.logo{
+
+    width: 12rem;
+    
+}
+
+/* ///////////////parallaxe////////////// */
+
+
+.logo__parallax{
+    position: relative;
+    width: 100vw;
+    height: 110vh;
+    background: linear-gradient(#FFD464,#9460E6);
+    
+}
+
+.logo__bob{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* ///////////////main//////////////// */
+
+
+
+.sea__background{
+    
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    background-image: url("data/fondmer.png");
+    background-size: cover;
+    z-index: 0;
+}
+
+.presentation{
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 100vw;
+    padding: 0 15rem;
+    margin-bottom: 25rem;
+}
+
+
+.presentation__bob{
+
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+    width: 25rem;
+    
+
+}
+
+.presentation__fleur{
+
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+    width: 30rem;
+    
+
+}
+
+
+
+
+.presentation__content{
+
+    margin-top: 300px;
+    color: white;
+    font-size: 30px;
+    text-align: justify ;
+    font-family: 'Poppins', Courier, monospace;
+ 
+}
+
+.bikini{
+
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+}
+
+.bikini__titre{
+
+    object-fit: cover;
+    width: 80%;
+
+}
+
+.village_map{
+   position: relative;
+}
+
+.village{
+
+    width: 100%;
+    height: fit-content;
+
+}
+
+.village__maison{
+
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    
+}
+
+.saison__text{
+    transition: 0.3s;
+}
+
+.maison{
+
+    cursor: pointer;
+}
+
+/* footer */
+
+
+
+#footer{
+    
+    position : absolute;
+    width: 100%;
+    bottom: 0;
+
+}
+
+#img__footer{
+    
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+.header__phone{
+
+    display: none;
+}
+
+#navigation__burger{
+
+    display:none;
+
+}
+
+
+
+/* ///////////////////////////////////////template //////////////////////////////////////*/
+
+.allEpisodeButton{
+    cursor: pointer;
+}
+
+.allEpisodeButton:hover{
+
+    transition: filter .5s;
+    filter: hue-rotate(90deg);
+    
+}
+
+main{
+    position: relative;
+}
+
+.maison{
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
+.content__template{
+    width: 100%;
+    height: fit-content;
+    background-color:#181818;
+    /* border-image: url('assets/bamboo.png') 40/40px round; */
+    z-index: 4;
+
+}
+
+.saison__top{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.saison__background{
+    width: 100%;
+}
+
+.saison__logo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+}
+
+.saison__croix{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.saison__croix:hover{
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+
+.saison__info{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.saison__info__div1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 0.7rem;
+}
+
+.saison__distribution{
+    font-weight: 500;
+}
+
+.saison__genre{
+
+    font-weight: 500;
+
+}
+
+.span{
+
+    font-weight: 800;
+
+}
+
+.saison__info__div2{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    
+}
+
+.saison__age{
+
+    font-weight: 500;
+
+}
+
+.saison__nbsaison{
+
+    font-weight: 500;
+
+}
+
+.saison__episodes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.saison__titre{
+
+    font-size: 5rem;
+    
+}
+
+.saison__episodes__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.episode__item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #181818;
+    width: 80%;
+    
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-bottom: 2px #333333 solid;
+    
+    cursor: pointer;
+    transition: .2s;
+}
+
+.episode__item:hover{
+    border-radius: 10px;
+    background-color: #333333;
+}
+
+.saison__episode__note{
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.saison__episode__description{
+
+    text-align: justify ;
+    padding-top: 1rem;
+    font-size: 0.7rem;
+    font-weight: 300;
+    
+}
+
+.saison__episode__date{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.saison__episode__divImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin: 1rem 1.5rem;
+  
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .3s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #FFF15F;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #FFF15F;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .saison__sort{
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     gap: 0.6rem;
+     padding-right: 5rem; 
+
+     margin: 3rem 0;
+}
+
+
+.template__top{
+
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 5rem;
+
+}
+
+.allEpisode__logo{
+    top: 0;
+    left:0;
+    padding: 10px 20px;
+    position:absolute;
+    width: 25%;
+}
+
+.description{
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+   
+}
+
+
+.template__list__episode{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info {
+
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify ;
+}
+
+.titre{
+
+    padding:1rem;
+
+}
+
+.date{
+    
+    padding:1rem;
+
+}
+
+.note{
+
+    padding:1rem;
+
+}
+
+.allEpisode__cross{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.allEpisode__cross:hover{
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* ///////////////////////////////////////telephone //////////////////////////////////////*/
+
+
+@media (max-width:1000px) { 
+
+    main{
+
+        font-size: 0.3rem;
+
+    }
+    
+    .header{
+        display: none;
+    }
+
+
+
+    .header__phone{
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        padding: 20px 30px;
+        justify-content: space-between;
+        z-index: 1000;
+        
+
+    }
+
+    
+    .logo__phone{
+        
+        position: relative;
+        width: 5rem;
+        
+    }
+
+    #toggle{
+
+        position: relative;
+        z-index:10;
+        
+        width: 45px;
+        height: 37.5px;
+        cursor: pointer;
+        transition: 0.5s;
+        background-image: url("data/menuburger/BURGER\ 1.png");
+        background-size: cover;
+
+    }
+    
+    #navigation__burger{
+
+        position: fixed;
+        top:0;
+        right: -100vw;
+        width: 100vw;
+        height: 100vh;
+
+        z-index: 10;
+
+        
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        background-image: url("data/menuburger/fondmer.png");
+        background-size: cover;
+        
+    }
+
+    #navigation__burger.active{
+
+        transform: translateX(-100vw);
+        z-index: 10;
+       
+        
+    }
+
+    
+
+
+    #navigation__burger ul{
+
+        position: relative;
+        padding-top:5rem ;
+        display: flex;
+        
+        
+    }
+
+
+    .burger__items a{
+
+        color: #7f8801;
+        text-decoration: none;
+        font-family: 'poppins';
+        font-size: 2em;
+        font-weight: 600;
+        text-transform: uppercase;
+
+    }
+
+
+
+
+    #toggle:hover{
+
+        transform: scale(1.2);
+        
+
+    }
+
+    /* /////////////parallaxe//////////// */
+
+    
+
+    .logo__parallax{
+        
+        position: relative;
+        width: 100vw;
+        height: 40vh;
+        
+    }
+    
+    
+    
+    /* ///////////////////presentation////////////////////// */
+
+    .presentation{
+      
+        height: 100vh;
+        padding: 0 25px;
+        background-color: none;
+        margin-bottom: 25rem;
+    }
+
+    .presentation__bob{
+
+        width: 10rem;
+
+    }
+
+    .presentation__fleur{
+
+        width: 15rem;
+
+    }
+
+    .presentation__content{
+
+        font-size: 20px;
+    
+    }
+
+
+    /* //////////////////////template//////////////////////// */
+
+
+    .content__template{
+
+        width: 100%;
+
+    }
+
+    .saison__titre{
+
+        font-size: 2rem;
+
+    }
+
+    .saison__episode__description{
+
+        text-align: justify ;
+        font-size: 0.5rem;
+    }
+
+    .episode__item{
+
+        display:block;
+        border-radius: 10px;
+        background-color: #333333;
+        align-items: center;
+        overflow: hidden;
+        
+    }
+
+
+    .saison__episode__title{
+
+        font-size: 2rem;
+
+    }
+
+    .info {
+
+        padding: 1.5rem;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: justify ;
+    }
+    
+    .titre{
+    
+        padding:2rem;
+        font-size: 1.5rem;
+    }
+    
+    .date{
+        
+       
+        font-size: 1rem;
+    }
+    
+    .note{
+    
+        font-size: 1rem;
+
+    }
+
+
+    .allEpisode__logo{
+
+       display: none;
+    }
+
+    
+    .template__top{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7rem 0;
+    }
+
+    .template__top p {
+        font-size: 2rem;
+       
+    }
+
+
+
+    .description h3{
+
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+
+    }
+
+    .description h2{
+      
+        font-size: 2.5rem;
+
+    }
+
+    .allEpisode__cross{
+
+        width:5rem;
+        padding: 1rem;
+
+    }
+
+
+    .saison__sort{
+
+        padding:0;
+
+        
+    }
+    
+    
+    .noteMin{
+
+        font-size: 2rem;
+    }
+
+}
+
+img[src="https://cdn.000webhost.com/000webhost..." ]
+{
+display:none;
+}
