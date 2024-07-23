@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Ancient;
+    src: url("assets/Ancient\ Medium.ttf");
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+    font-family: Ancient;
+}
+
+
+.buttonRotate{
+    position: absolute;
+    top: 90%;
+    left: calc(50% - 2rem);
+    width: 4rem;
+    height: 4rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.castleLabel{
+    font-size: 2rem;
+}
+
+.armyLabel{
+    font-size: 1.5rem;
+}
+
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
