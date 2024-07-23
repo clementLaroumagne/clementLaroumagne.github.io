@@ -1,0 +1,122 @@
+
+@font-face {
+    font-family: "Product Sans";
+    src: url('product-sans/Product\ Sans\ Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Product Sans";
+    src: url('product-sans/Product\ Sans\ Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Product Sans";
+    src: url('product-sans/Product\ Sans\ Italic.ttf');
+    font-style: italic;
+}
+@font-face {
+    font-family: "Product Sans";
+    src: url('product-sans/Product\ Sans\ Bold\ Italic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+::selection {
+    background-color: #004a77;
+    color: #e3e3e3;
+}
+
+body{
+    font-family: "Product Sans";
+    color: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1f1f1f;
+}
+
+h1{
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    margin: 4rem 0;
+    font-weight: bold;
+}
+
+#logo{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: 85px;
+    width: auto;
+    border-radius: 0% 50% 50% 50%;
+}
+
+.titre-section{
+    margin: 2rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.card-list{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.card{
+    position: relative;
+    margin: 0.25rem;
+    height: 350px;
+    width: 400px;
+    background-color: #28292a;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: ease-in 0.1s;
+}
+
+.card:hover{
+    background-color: #004a77;
+}
+
+.card .img{
+    border-radius: 24px;
+    height: 200px;
+    width: auto;
+    background-color: #3e4a36;
+    background-position: center;
+}
+
+.card .text{
+    margin: 1rem 2rem;
+}
+
+.card h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.links-list{
+    list-style-type: none;
+}
+
+.links-link img{
+    height: 50px;
+    width: auto;
+    margin: 0 1rem;
+}
+
+#links-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Clement.png" type="image/x-icon">
+    <title>Portfolio - Clément Laroumagne</title>
+</head>
+<body>
+    <h1>Clément Laroumagne</h1>
+
+    <img id="logo" src="images/Clement.png" alt="logo">
+
+    <div id="sites-web-div">
+        <h2 class="titre-section">Sites web</h2>
+        <li class="card-list"></li>
+    </div>
+
+    <div id="test-graphiques-div">    
+        <h2 class="titre-section">Tests graphiques</h2>
+        <li class="card-list"></li> 
+    </div>
+
+    <div id="jeux-div">    
+        <h2 class="titre-section">Jeux</h2>
+        <li class="card-list"></li> 
+    </div>
+
+    <div id="links-div">
+
+        <li class="links-list"></li>
+    </div>
+
+
+    <template id="card-template">
+        <div class="card" data-url="{{url}}" onclick="window.open('{{url}}', '_blank')">
+            <div class="img" data-srcimg="{{src}}" style="background-image: url('{{src}}');"></div>
+            <div class="text">
+                <h2>{{titre}}</h2>
+                <p>{{text}}</p>
+            </div>
+        </div>
+    </template>
+
+    <template id="link-template">
+        <a class="links-link" href="{{url}}" target="_blank">
+            <img src="{{src}}" alt="{{text}}">
+        </a>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
