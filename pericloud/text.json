@@ -1,0 +1,39 @@
+{
+    "monuments": {
+        "dolmen": {
+            "img": "dolmen.png",
+            "video": "dolmen.mp4",
+            "titre": "Le Dolmen de Brantôme",
+            "description": "Egalement connu sous le nom de 'pierre levée', le dolmen de Brantôme est un monument de pierre niché au cœur du Périgord vert. Erigé il y a environ 5000 ans, ce mystérieux édifice servait de sépulture aux anciens habitants de la région. Après sa découverte en 1818, le dolmen est devenu un monument très touristique, également à l'origine de nombreuses cartes postales durant le XXème siècle.Aujourd'hui moins visité, le dolmen réside toujours paisiblement à son emplacement d'origine."
+        },
+        "branlant": {
+            "img": "branlant.png",
+            "video": "branlant.mp4",
+            "titre": "Le Roc Branlant",
+            "description": "Niché au cœur de la forêt de Saint-Estèphe, près de Nontron, ce rocher monumental de 50 tonnes posé en équilibre près d'une cascade. La particularité de ce rocher repose sur sa position particulière, qui permet aux visiteurs.euses de faire bouger ce roc en le poussant. L'histoire de ce roc remonte il y a bien longtemps, puisqu'on retrouve plusieurs légendes anciennes le concernant. Porte de l'enfer ?  Lieu de réunion de druides ? En tout cas, aujourd'hui, les croyances autour du roc branlant persistent : il parait que les cèpes se multiplient autour du rocher."
+        },
+        "chateau":{
+            "img": "chateau.png",
+            "video": "chateau.mp4",
+            "titre": "Chateau de Mareuil",
+            "description": "Son apparence de ruines mystérieuses est loin de refléter la grandeur de ce monument, puisque le château de Mareuil est témoin de l'évolution de l'humanité de de son histoire. Son origine remonte au XVème siècle, à la suite de la destruction d'un précédent château médiéval, victime de la guerre de cent ans. Le château de Mareuil fut anciennement le siège de l'une des 4 barronnies du Périgord, avec celui de Beynac, Bourdeilles et Biron. Délaissé à la Révolution, le château des aujourd'hui un des principaux lieux touristiques du Périgord vert."
+        }
+    },
+
+    "accueil": {
+        "titre": "Péricloud",
+        "text": [
+            "Vous êtes sur le point de faire la découverte d'un univers unique.",
+            "Un monde rempli d'histoires et de mystères",
+            "Un monde en vert,",
+            "en blanc,",
+            "en noir,",
+            "en pourpre,",
+            "Bienvenue",
+            "Dans le Périgord."
+        ],
+        "musique": "acousticbreeze.mp3",
+        "info": "Bienvenue sur la petite île du Périgord. Ici, vous avez la possibilité d'explorer les endroits méconnus du grand public, à travers un media original : les cartes postales anciennes et la 3D. Vous pouvez vous déplacer et zoomer sur la carte afin d'explorer les lieux. Lorsque vous tombez sur un monument qui vous intrigue, cliquez ou tapez dessus afin de révéler les informations sur celui-ci. Une fois sur la page du monument, vous pourrez observer sa carte postale. En faisant glisser la carte de gauche à droite, vous pourrez découvrir la scène de la carte postale, en couleurs et animée.  En dessous, vous trouverez un texte d'explication de l'histoire du monument. L'objectif de ce projet est de faire (re)découvrir le Périgord à travers l'histoire, et ce par l'intermédiaire de cartes postales anciennes antérieures à l'année 1924. Mon but était également de redonner vie à ces cartes (et à ces lieux méconnus) grâce à la 3D.",
+        "credit": "Modèle 3D : Clémentine Dufour, <br> Cartes postales : Archives départementales de la Dordogne, <br> Textes : Clémentine Dufour, <br> Musique : Acoustic Breeze - Benjamin Tissot - <a src='https://bensound.com'>bensound.com</a>, <br> Réalisation Web : Clément Laroumagne"
+    }
+}
