@@ -12,11 +12,17 @@
             "titre": "Le Roc Branlant",
             "description": "Niché au cœur de la forêt de Saint-Estèphe, près de Nontron, ce rocher monumental de 50 tonnes posé en équilibre près d'une cascade. La particularité de ce rocher repose sur sa position particulière, qui permet aux visiteurs.euses de faire bouger ce roc en le poussant. L'histoire de ce roc remonte il y a bien longtemps, puisqu'on retrouve plusieurs légendes anciennes le concernant. Porte de l'enfer ?  Lieu de réunion de druides ? En tout cas, aujourd'hui, les croyances autour du roc branlant persistent : il parait que les cèpes se multiplient autour du rocher."
         },
-        "chateau":{
+        "chateau": {
             "img": "chateau.png",
             "video": "chateau.mp4",
             "titre": "Chateau de Mareuil",
             "description": "Son apparence de ruines mystérieuses est loin de refléter la grandeur de ce monument, puisque le château de Mareuil est témoin de l'évolution de l'humanité de de son histoire. Son origine remonte au XVème siècle, à la suite de la destruction d'un précédent château médiéval, victime de la guerre de cent ans. Le château de Mareuil fut anciennement le siège de l'une des 4 barronnies du Périgord, avec celui de Beynac, Bourdeilles et Biron. Délaissé à la Révolution, le château des aujourd'hui un des principaux lieux touristiques du Périgord vert."
+        },
+        "labesse": {
+            "img": "labesse.png",
+            "video": "labesse.mp4",
+            "titre": "Chateau de la Besse",
+            "description": "Le château de La Besse est situé à Milhac-d'Auberoche, au cœur du Périgord Blanc. Construit au Moyen Âge, il a beaucoup évolué au fil du temps. À l'origine, il servait de forteresse défensive contre les bandes armées de pillards ou les soldats en maraude. Il a très probablement été impliqué dans les guerres de religions qui ont secoué la région. Malheureusement, les détails de son histoire ne sont pas bien documentés."
         }
     },
 
