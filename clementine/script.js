@@ -42,7 +42,7 @@ V.scrollTo = function(){
                 done = true;
             }
             else{
-                x += 1/500;
+                x += 1/250;
                 let scrollBy = easing(x) / 100 * h;
                 if(window.scrollY + Math.abs(scrollBy) > h){
                     window.scroll(0, h);
