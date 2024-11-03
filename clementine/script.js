@@ -106,7 +106,8 @@ C.handlerClickLink = function(ev){
         let template = document.querySelector('.templateContact');
         V.downPart.innerHTML = template.innerHTML;
     }
-    V.scrollTo();
+    // V.scrollTo();
+    window.scrollTo(0, window.innerHeight);
 }
 
 C.handlerClickLinkTri = function(ev){
