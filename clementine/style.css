@@ -135,16 +135,16 @@ h1{
 .parallaxLayer{
   position: absolute;
 
-  /* overscan pour ne jamais voir les bords pendant le parallax */
-  /* (= agrandit le wrapper autour du viewport) */
-  top: -12vh;
+  /* agrandis davantage le cadre autour du viewport */
+  top: -20vh;
   right: -12vw;
-  bottom: -12vh;
+  bottom: -20vh;
   left: -12vw;
 
-  /* IMPORTANT : AUCUN transform ici */
   will-change: transform;
   z-index: 0;
+  overflow: hidden; /* important : masque tout ce qui dépasse */
+
 }
 
 .imgFond{
