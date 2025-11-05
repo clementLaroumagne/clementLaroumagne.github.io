@@ -121,15 +121,15 @@ h1{
 }
 
 .parallaxContainer{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;        
-    z-index: 0;           
+    position: relative; 
+    top: 0; left: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; 
     background-color: rgb(17, 32, 0);
-    overflow: hidden;
 }
 
 .imgFond{
@@ -140,7 +140,7 @@ h1{
     filter: contrast(80%);
 }
 
-/* La vidéo plein écran en fond */
+/* La vidéo plein écran en fond 
 .bgVideo{
     position: absolute;
     top: 50%;
@@ -154,7 +154,7 @@ h1{
     filter: contrast(80%);     /* comme tes anciennes images */
     pointer-events: none;      /* ne bloque pas les clics */
     z-index: 0;
-}
+}*/
 
 .imagebg{
     width: 90%;
@@ -162,13 +162,13 @@ h1{
 }
 
 .marron{
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: #734939;
-    mix-blend-mode: overlay;
+    position: absolute; 
+    top: 0; left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #734939; 
+    mix-blend-mode: overlay; 
     opacity: 40%;
-    z-index: 5; 
 }
 
 .imgFond:first-child{
