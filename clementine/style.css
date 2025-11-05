@@ -121,15 +121,12 @@ h1{
 }
 
 .parallaxContainer{
-    position: relative; 
-    top: 0; left: 0; 
-    display: flex; 
-    justify-content: center; 
-    align-items: flex-start; 
-    width: 100%; 
-    height: 100%; 
-    z-index: 0; 
-    background-color: rgb(17, 32, 0);
+  position: relative;
+  width: 100%;
+  height: 100vh;        /* occupe bien la hauteur de l’écran */
+  overflow: hidden;
+  background: transparent; /* ⚠️ supprime le vert foncé */
+  z-index: 0;  
 }
 
 .imgFond{
@@ -145,17 +142,11 @@ h1{
   position: absolute;
   top: 50%;
   left: 50%;
-
-  /* surdimension pour absorber le décalage parallax */
-  width: 120vw;
-  height: 140vh;
-
-  /* décale le cadre vers le bas (ajuste la valeur à ton goût) */
-  transform: translate(-50%, calc(-50% + 8vh));
-
-  object-fit: cover;          /* couvre tout l'écran */
-  object-position: 50% 90%;   /* centre X, favorise le bas (85% ~ bas) */
-
+  width: 130vw;          /* plus large pour éviter les bords */
+  height: 150vh;         /* plus haut pour absorber le décalage du parallax */
+  transform: translate(-50%, calc(-50% + 10vh)); /* décale vers le bas */
+  object-fit: cover;
+  object-position: 50% 85%; /* favorise la partie basse de l’image */
   pointer-events: none;
   z-index: 0;
 }
