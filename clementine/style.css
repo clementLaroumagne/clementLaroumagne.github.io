@@ -135,16 +135,15 @@ h1{
 .parallaxLayer{
   position: absolute;
 
-  /* agrandis davantage le cadre autour du viewport */
-  top: -20vh;
-  right: -12vw;
-  bottom: -20vh;
+  /* OVERSCAN + BIAIS VERS LE HAUT (montre plus le bas de l'image) */
+  top: -35vh;      /* plus négatif = cadre plus haut = plus d'herbe visible */
+  bottom: -5vh;    /* moins négatif pour garder de la marge en bas */
   left: -12vw;
+  right: -12vw;
 
   will-change: transform;
   z-index: 0;
-  overflow: hidden; /* important : masque tout ce qui dépasse */
-
+  overflow: hidden;
 }
 
 .imgFond{
@@ -158,11 +157,11 @@ h1{
 /* La vidéo plein écran en fond */
 .bgVideo{
   position: absolute;
-  inset: 0;                 /* top/right/bottom/left: 0 */
+  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;        /* couvre tout */
-  object-position: 50% 60%; /* montre plus le bas (augmente à 90% si tu veux encore plus) */
+  object-fit: cover;
+  object-position: 50% 90%; /* ou 95%, comme tu préfères */
   pointer-events: none;
 }
 
