@@ -124,13 +124,12 @@ h1{
     position: relative;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    display: block;       
+    z-index: 0;            
     background-color: rgb(17, 32, 0);
+    overflow: hidden;
     
 }
 
@@ -140,6 +139,22 @@ h1{
     height: 100%;
     object-fit: cover;
     filter: contrast(80%);
+}
+
+/* La vidéo plein écran en fond */
+.bgVideo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: contrast(80%);     
+    pointer-events: none;      
+    z-index: 0;
 }
 
 .imagebg{
@@ -156,6 +171,7 @@ h1{
     background-color: #734939;
     mix-blend-mode: overlay;
     opacity: 40%;
+    z-index: 5;
 }
 
 .imgFond:first-child{
