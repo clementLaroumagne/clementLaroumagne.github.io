@@ -154,7 +154,7 @@ h1{
   transform: translate(-50%, calc(-50% + 8vh));
 
   object-fit: cover;          /* couvre tout l'écran */
-  object-position: 50% 85%;   /* centre X, favorise le bas (85% ~ bas) */
+  object-position: 50% 90%;   /* centre X, favorise le bas (85% ~ bas) */
 
   pointer-events: none;
   z-index: 0;
