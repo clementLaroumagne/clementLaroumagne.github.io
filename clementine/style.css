@@ -126,11 +126,10 @@ h1{
     left: 0;
     width: 100%;
     height: 100%;
-    display: block;       
-    z-index: 0;            
+    display: block;        
+    z-index: 0;           
     background-color: rgb(17, 32, 0);
     overflow: hidden;
-    
 }
 
 .imgFond{
@@ -164,14 +163,12 @@ h1{
 
 .marron{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     background-color: #734939;
     mix-blend-mode: overlay;
     opacity: 40%;
-    z-index: 5;
+    z-index: 5; 
 }
 
 .imgFond:first-child{
