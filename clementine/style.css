@@ -188,25 +188,27 @@ h1{
 }
 
 .divNav{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 5rem;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0; /* au lieu de left: 0 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* toujours centré verticalement */
+  align-items: flex-end; /* aligne le texte à droite */
+  gap: 5rem;
+  width: 100%;
+  height: 100%;
 
-    z-index: 16;
+  z-index: 16;
+
 }
 
 .divNav a {
     color: #F1EAE0;
     font-size: 3rem;
     text-decoration: none;
-    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: right;
 }
 
 .divNav a:hover{
