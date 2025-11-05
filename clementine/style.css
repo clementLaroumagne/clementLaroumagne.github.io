@@ -94,6 +94,7 @@ h1{
     font-size: 5rem;
     font-weight: bold;
     color: #F1EAE0;
+    z-index: 16;
 }
 
 .divClem h2{
@@ -126,7 +127,7 @@ h1{
   height: 100vh;
   overflow: hidden;
   background: transparent; /* pas de fond vert */
-  z-index: 0;
+  z-index: 0;              /* surtout pas -1 */
 }
 
 .imgFond{
@@ -140,21 +141,23 @@ h1{
 /* La vidéo plein écran en fond */
 .bgVideo{
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%); /* Centre horizontalement, plus de Y ici */
-  
-  /* Taille : un peu plus grande que le viewport pour absorber le décalage du parallax */
-  width: 120vw;
-  height: auto;
-  min-height: 120vh;   /* Assure qu'elle couvre toute la hauteur */
 
-  object-fit: cover;
-  object-position: 50% 85%;  /* Cadre vers le bas */
+  /* surdimension dans les DEUX axes pour absorber le parallax */
+  min-width: 120vw;
+  min-height: 140vh;
+  width: auto;
+  height: auto;
+
+  /* centre exact + petit offset vers le bas (ajuste 8vh si besoin) */
+  transform: translate(-50%, calc(-50% + 8vh));
+
+  object-fit: cover;          /* remplit sans bandes */
+  object-position: 50% 85%;   /* favorise le bas (85%→90% = encore plus bas) */
 
   pointer-events: none;
   z-index: 0;
-
 }
 
 .imagebg{
