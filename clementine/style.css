@@ -46,7 +46,7 @@ h1{
 }
 
 .divTitre{
-    position: relative;
+    position: absolute;
     top: 33.33%;
     right: 10%;
 
@@ -84,7 +84,7 @@ h1{
 }
 
 .divClem{
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
@@ -188,7 +188,7 @@ h1{
 }
 
 .divNav{
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
