@@ -139,7 +139,7 @@ h1{
   width: 130vw;
   height: 150vh;
 
-  transform: translate(-50%, -50%);   /* centrée au départ; Rellax ajoutera son translateY */
+  transform: translate(-50%, calc(-50% + 8vh));   /* centrée au départ; Rellax ajoutera son translateY */
   will-change: transform;             /* perf */
   z-index: 0;
 }
