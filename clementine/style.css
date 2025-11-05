@@ -143,16 +143,11 @@ h1{
 
 /* La vidéo plein écran en fond */
 .bgVideo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
+    position: fixed;
+    inset : 0;
     width: auto;
     height: auto;
-    transform: translate(-50%, -50%);
     object-fit: cover;
-    filter: contrast(80%);     
     pointer-events: none;      
     z-index: 0;
 }
