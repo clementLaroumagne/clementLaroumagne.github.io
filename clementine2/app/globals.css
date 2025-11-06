@@ -1,0 +1,363 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #F5E6D3;
+  --foreground: #5C4A3A;
+  --accent: #D4C4B0;
+  --accent-light: #E8DCC6;
+  --text-dark: #6B5B4A;
+  --green: #878f76;
+  --green-light: #9da58a;
+  --font-bahnschrift: bahnschrift-condensed, sans-serif;
+  --radius: 0.625rem;
+  --card: rgba(255, 255, 255, 0.4);
+  --card-foreground: #5C4A3A;
+  --popover: rgba(255, 255, 255, 0.9);
+  --popover-foreground: #5C4A3A;
+  --primary: #5C4A3A;
+  --primary-foreground: #F5E6D3;
+  --secondary: #E8DCC6;
+  --secondary-foreground: #5C4A3A;
+  --muted: #D4C4B0;
+  --muted-foreground: #6B5B4A;
+  --accent-foreground: #5C4A3A;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: rgba(212, 196, 176, 0.3);
+  --input: rgba(212, 196, 176, 0.2);
+  --ring: rgba(92, 74, 58, 0.2);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: #F5E6D3;
+  --sidebar-foreground: #5C4A3A;
+  --sidebar-primary: #5C4A3A;
+  --sidebar-primary-foreground: #F5E6D3;
+  --sidebar-accent: #E8DCC6;
+  --sidebar-accent-foreground: #5C4A3A;
+  --sidebar-border: rgba(212, 196, 176, 0.3);
+  --sidebar-ring: rgba(92, 74, 58, 0.2);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-text-dark: var(--text-dark);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-bahnschrift: var(--font-bahnschrift);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-bahnschrift), system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}
+
+/* Titres en gras par défaut */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bahnschrift);
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Paragraphes et texte normal */
+p, span, div, a, button, input, textarea, select, label {
+  font-family: var(--font-bahnschrift);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Textes légers (labels, petits textes) */
+.font-light, .text-xs, .text-sm {
+  font-weight: 200;
+}
+
+/* Textes en italique */
+em, i, .italic {
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Textes en gras */
+strong, b, .font-bold {
+  font-weight: 700;
+}
+
+/* Sélection de texte */
+::selection {
+  background-color: var(--green);
+  color: var(--background);
+}
+
+::-moz-selection {
+  background-color: var(--green);
+  color: var(--background);
+}
+
+/* Effet grain aquarelle statique (gardé pour compatibilité) */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+/* Animation du grain - comme dans l'ancien portfolio */
+@keyframes noiseMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}
+
+/* Grain animé - identique à l'ancien portfolio */
+.grain-animated {
+  z-index: 10;
+  animation: noiseMove 0.5s steps(10) infinite !important;
+  will-change: background-position;
+}
+
+/* Styles aquarelle pour les éléments */
+.aquarelle-shadow {
+  box-shadow: 0 4px 20px rgba(92, 74, 58, 0.08), 0 2px 8px rgba(92, 74, 58, 0.04);
+}
+
+.aquarelle-border {
+  border-radius: 12px;
+  border: 1px solid rgba(212, 196, 176, 0.3);
+}
+
+.aquarelle-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(212, 196, 176, 0.2);
+  box-shadow: 0 8px 32px rgba(92, 74, 58, 0.06), 0 2px 8px rgba(92, 74, 58, 0.03);
+}
+
+/* Boutons personnalisés verts */
+.btn-custom {
+  background: transparent;
+  border: 2px solid var(--green);
+  color: var(--green);
+  padding: 12px 32px;
+  font-size: 14px;
+  font-family: var(--font-bahnschrift);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+/* Tous les boutons sans bords arrondis */
+button {
+  border-radius: 0 !important;
+}
+
+.btn-custom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--green);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.btn-custom:hover {
+  color: var(--background);
+  border-color: var(--green-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 142, 90, 0.2);
+}
+
+.btn-custom:hover::before {
+  left: 0;
+}
+
+.btn-custom:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(107, 142, 90, 0.15);
+}
+
+.btn-custom:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(107, 142, 90, 0.2);
+}
+
+/* Animations pour les liens de contact */
+.contact-link {
+  position: relative;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-family: var(--font-bahnschrift);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--green);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.contact-link:hover {
+  color: var(--green-light);
+  transform: translateY(-3px);
+}
+
+.contact-link:hover::before {
+  width: 100%;
+}
+
+.contact-link:active {
+  transform: translateY(-1px);
+}
+
+/* Masquer la scrollbar pour le défilement horizontal */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+/* Typographie Bahnschrift */
+.font-bahnschrift {
+  font-family: var(--font-bahnschrift);
+}
+
+.font-bahnschrift-light {
+  font-family: var(--font-bahnschrift);
+  font-weight: 200;
+  font-style: normal;
+}
+
+.font-bahnschrift-regular {
+  font-family: var(--font-bahnschrift);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-bahnschrift-bold {
+  font-family: var(--font-bahnschrift);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "about": {
+    "sections": [
+      {
+        "image": "/images/about1.jpg",
+        "text": "Originaire d'un petit hameau en pleine campagne du Périgord Vert, je suis passionnée par la nature, les paysages simples et naturels. J'aime chercher à représenter ces éléments dans tout ce qui m'entoure et tente de montrer au monde ma vision de la beauté du monde. Je veux immortaliser des éléments simples, comme des fleurs, mais aussi des ruines, des témoignages de notre histoire.\n\nPassionnée par l'histoire et les vieux objets, j'apprécie m'évader dans des lieux mystiques et mystérieux, à m'imaginer et me plonger dans des univers ou lieux passés, imaginer qui a vécu ici et comment était la vie. Peut-être qu'une personne, il y a des siècles, s'est adossé contre ces murs auquel plus personne ne porte attention... N'est-ce pas incroyable ?"
+      },
+      {
+        "image": "/images/about2.jpg",
+        "text": "Je suis actuellement étudiante en première année de master en Direction de Projets Audiovisuels et Numériques, à La Rochelle.\nJe suis spécialisée dans la 3D et la réalisation/production de vidéos, bien que je sois ouverte à d'autres domaines. Puisque j'aime essayer de nouvelles choses, il est important pour moi de tenter de renouveller expériences.\n\nJ'essaie dans mes créations de faire ressortir ma personnalité : simplicité, passion pour l'histoire et pour la nature. J'aime l'authenticité.\nMon idéal serait d'utiliser la création pour sensibiliser autrui à des thèmes ou des sujets invisibles, dont on ne parle pas ou peu."
+      }
+    ]
+  },
+  "productions": [
+    {
+      "id": "demo-reel",
+      "type": "Vidéos",
+      "title": "Démo-reel",
+      "description": "Mon nouveau démo-reel présentant mes meilleures créations en 3D, vidéo et effets visuels.",
+      "image": "/images/demo-reel.jpg",
+      "link": "https://example.com/demo-reel",
+      "isDemoReel": true
+    },
+    {
+      "id": "diorama",
+      "type": "3D",
+      "title": "Diorama",
+      "description": "Diorama réalisé dans le cadre de ma deuxième année en master XR. Inspirations automnale, witchy, cottage.\nLogiciels : Blender (modélisation), Unity (intégration + simulation de particules), Substance 3D Painter (textures).",
+      "image": "/images/diorama.jpg",
+      "link": "https://example.com/diorama",
+      "isDemoReel": false
+    },
+    {
+      "id": "pericloud",
+      "type": "3D",
+      "title": "PeriCloud",
+      "description": "Projet de site web interactif permettant de découvrir, d'une manière originale, des lieux méconnus de Dordogne, à travers une carte style low-poly et de vieilles cartes postales reproduites en 3D (et animées).\nLogiciels & technologies : Blender, ThreeJS",
+      "image": "/images/pericloud.jpg",
+      "link": "https://clemz.fr/pericloud",
+      "isDemoReel": false
+    },
+    {
+      "id": "court-metrage",
+      "type": "Vidéos",
+      "title": "Court-métrage",
+      "description": "Court-métrage de fin de licence, qui parle de deuil et qui rend un hommage à ma grand-mère. J'ai décidé de mélanger plusieurs techniques, en mélangeant 3D et prise de vue réelle.\nLogiciels : Unreal Engine, Illustrator, After Effects, Animashooter",
+      "image": "/images/court-metrage.jpg",
+      "link": "https://example.com/court-metrage",
+      "isDemoReel": false
+    },
+    {
+      "id": "diorama-2",
+      "type": "3D",
+      "title": "Diorama 2",
+      "description": "Diorama réalisé dans le cadre de ma deuxième année en master XR. Inspirations automnale, witchy, cottage.\nLogiciels : Blender (modélisation), Unity (intégration + simulation de particules), Substance 3D Painter (textures).",
+      "image": "/images/diorama-2.jpg",
+      "link": "https://example.com/diorama-2",
+      "isDemoReel": false
+    }
+  ],
+  "contact": {
+    "email": "clementine.dfr2@gmail.com",
+    "phone": "06 17 94 25 85",
+    "linkedin": "https://fr.linkedin.com/in/cl%C3%A9mentine-dufour-593554203"
+  }
+}
+
