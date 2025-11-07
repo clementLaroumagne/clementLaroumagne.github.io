@@ -259,7 +259,7 @@ export default function Productions() {
                             >
                               {production.image && (
                                 <Image
-                                  src={"/clementine/"+ production.image}
+                                  src={"/clementine"+ production.image}
                                   alt={production.title}
                                   fill
                                   className="object-cover"
@@ -293,7 +293,7 @@ export default function Productions() {
                             >
                               {production.image && (
                                 <Image
-                                  src={"/clementine/" + production.image}
+                                  src={"/clementine" + production.image}
                                   alt={production.title}
                                   fill
                                   className="object-cover"
