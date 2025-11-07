@@ -125,7 +125,7 @@ export default function Header({ onSectionChange, activeSection }: HeaderProps) 
         className="absolute inset-0 w-full h-full object-cover z-0"
         aria-hidden="true"
       >
-        <source src="/hdVdo_Bg.mp4" type="video/mp4" />
+        <source src="/clementine/hdVdo_Bg.mp4" type="video/mp4" />
       </video>
 
       {/* Traces aquarelle */}

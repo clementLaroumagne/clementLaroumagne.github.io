@@ -57,7 +57,7 @@ export default function About({ onSectionChange }: AboutProps) {
               {/* Image mobile */}
               <div className="flex justify-center items-center w-full bg-[var(--background)] md:hidden">
                 <Image
-                  src="/champi.png"
+                  src="/clementine/champi.png"
                   alt="Clémentine Dufour"
                   width={150}
                   height={150}
@@ -68,7 +68,7 @@ export default function About({ onSectionChange }: AboutProps) {
               {/* Image desktop */}
               <div className="relative w-full aspect-[3/4] bg-[var(--accent)] hidden md:block">
                 <Image
-                  src="/photoclem.jpg"
+                  src="/clementine/photoclem.jpg"
                   alt="Clémentine Dufour"
                   fill
                   className="object-cover"
