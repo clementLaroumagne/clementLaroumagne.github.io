@@ -5,7 +5,7 @@ export default function GrainEffect() {
     <div
       className="grain-animated fixed inset-0 z-[9998] pointer-events-none"
       style={{
-        backgroundImage: 'url("/noise.png")',
+        backgroundImage: 'url("/clementine/noise.png")',
         backgroundRepeat: 'repeat',
       }}
     />
