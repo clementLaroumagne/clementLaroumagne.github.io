@@ -27,11 +27,16 @@ export default function About({ onSectionChange }: AboutProps) {
             
             {/* Texte réduit */}
             <div className="space-y-4">
-              <p className="text-[var(--text-dark)] text-center text-sm md:text-base uppercase tracking-wider font-light leading-relaxed">
-                CLÉMENTINE DUFOUR EST UNE ARTISTE SPÉCIALISÉE DANS LA 3D, LA RÉALISATION ET LA PRODUCTION DE VIDÉOS.
+              <p className="text-[var(--text-dark)] text-center text-sm md:text-base uppercase tracking-wider font-light leading-relaxed !mb-4">
+                ACTUELLEMENT AGEE DE 24 ANS, JE SUIS UNE VIDEASTE ET ARTISTE 3D. JE PORTE UNE GRANDE IMPORTANCE AUX SUJETS DE SENSIBILISATION AUX TROUBLES MENTAUX, A L'ENFANCE, A LA PROTECTION DE LA NATURE ET A L'HISTOIRE.
               </p>
-              <p className="text-[var(--text-dark)] text-center text-sm md:text-base italic leading-relaxed">
-                une artiste et exploratrice de la nature, de l'histoire et des antiquités
+              <p className="text-[var(--text-dark)] text-center text-sm md:text-sm italic leading-relaxed">
+                2024 - 2025 : Master Cinéma XR - ENSAV Castres/Toulouse (France) <br />
+                2023 - 2024 : Master Direction de Projets Audiovisuels et Numériques - La Rochelle (France) <br />
+                2022 - 2023 : Licence Pro. Créations Infographiques Appliquées à l'Audiovisuel - ENSAV Castres (France) <br />
+                2020 - 2022 : DUT Métiers du Multimédia et de l'Internet - Limoges (France) <br />
+                2019 - 2020 : Double-licence année 1 Histoire de l'Art et Archéologie | Histoire - Poitiers (France) <br />
+                2019 : Baccalauréat Littéraire spécialitation Anglais Approfondi - Nontron (France) <br />
               </p>
             </div>
 
@@ -78,7 +83,7 @@ export default function About({ onSectionChange }: AboutProps) {
             {/* Texte réduit */}
             <div className="space-y-4 text-right">
               <p className="text-[var(--text-dark)] text-center text-sm md:text-base uppercase tracking-wider font-light leading-relaxed">
-                CLÉMENTINE CRÉE DES CRÉATIONS EN 3D ET DES VIDÉOS COMME MOYEN D'EXPRIMER SA PASSION POUR L'HISTOIRE, LA NATURE ET LE PATRIMOINE.
+                DIPLOMEE EN 2025 D'UN MASTER EN CINEMA XR, JE PROPOSE MES SERVICES EN TANT QUE FREELANCE EN VIDEO, PRODUCTION 3D, MAIS AUSSI VR, 360. 
               </p>
             </div>
 

@@ -13,48 +13,200 @@
   },
   "productions": [
     {
-      "id": "demo-reel",
+      "id": "demoreel",
       "type": "Vidéos",
-      "title": "Démo-reel",
-      "description": "Mon nouveau démo-reel présentant mes meilleures créations en 3D, vidéo et effets visuels.",
-      "image": "/images/demo-reel.jpg",
-      "link": "https://example.com/demo-reel",
+      "title": "Démoreel | 2025",
+      "description": "Dernier DemoReel réalisé en 2025, présentant mes projets phares de l'année ainsi que des précédents, en vidéo classique ou vr, 3D, et autres.",
+      "image": "/Demoreel.png",
+      "link": "https://www.youtube.com/watch?v=1D-UGkvDe0c",
       "isDemoReel": true
+    },
+    {
+      "id": "malvina",
+      "type": "Vidéos",
+      "title": "Malvina | 2025",
+      "description": "Court-métrage 3D à 360° sur le thème des enfants de parents atteints de troubles mentaux. \nLogiciels : Blender (environnement, texturing, render) Photoshop, Premiere Pro.",
+      "image": "/Malvina.png",
+      "link": "https://www.youtube.com/watch?v=N5thOXgY-wI",
+      "isDemoReel": false
+    },
+    {
+      "id": "fitzwilliam",
+      "type": "3D",
+      "title": "Fitzwilliam | 2025",
+      "description": "Courte cinématique. \nLogiciels : Unreal Engine, Davinci Resolve",
+      "image": "/fitzwilliam.png",
+      "link": "https://youtu.be/EiVnUxZ9_v4",
+      "isDemoReel": false
+    },
+    {
+      "id": "elizabeth",
+      "type": "3D",
+      "title": "Elizabeth | 2025",
+      "description": "Courte cinématique. \nLogiciels : Unreal Engine, Davinci Resolve",
+      "image": "/lizzie.png",
+      "link": "https://youtu.be/nduQ2M9XHgc",
+      "isDemoReel": false
+    },
+    {
+      "id": "emprise",
+      "type": "Vidéos",
+      "title": "Emprise | 2025",
+      "description": "Court-métrage réalisé dans le cadre d'un travail de groupe lors de ma dernière année en master XR. Ecriture/Production/Chargée de casting, création et intégration de fog, mixage sonore. \nLogiciels : Blender, Davinci Resolve",
+      "image": "/emprise.png",
+      "link": "https://drive.google.com/file/d/1GsQAHqFjvohLssdcDDaPteYLDN9WIb3e/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "bv",
+      "type": "3D Vidéo",
+      "title": "Guide Station 2.0 - La Bulle Verte | 2025",
+      "description": "Courte vidéo tutoriel pour les stations autonomes de la startup La Bulle Verte. Vidéo sans son destinée à être publié sur un écran physique en permanence. \nLogiciels : Blender, Davinci Resolve",
+      "image": "/bv.png",
+      "link": "https://drive.google.com/file/d/1Nx_KgwoH34zR6PmX5qBNBViD-3P3l_T5/view?usp=sharing",
+      "isDemoReel": false
     },
     {
       "id": "diorama",
       "type": "3D",
-      "title": "Diorama",
+      "title": "Diorama | 2025",
       "description": "Diorama réalisé dans le cadre de ma deuxième année en master XR. Inspirations automnale, witchy, cottage.\nLogiciels : Blender (modélisation), Unity (intégration + simulation de particules), Substance 3D Painter (textures).",
-      "image": "/images/diorama.jpg",
-      "link": "https://example.com/diorama",
+      "image": "/diorama.png",
+      "link": "https://drive.google.com/file/d/1849JrLVuJTwEnZISnDIcyzF_fbO61Nld/view?usp=sharing",
       "isDemoReel": false
     },
     {
       "id": "pericloud",
-      "type": "3D",
-      "title": "PeriCloud",
-      "description": "Projet de site web interactif permettant de découvrir, d'une manière originale, des lieux méconnus de Dordogne, à travers une carte style low-poly et de vieilles cartes postales reproduites en 3D (et animées).\nLogiciels & technologies : Blender, ThreeJS",
-      "image": "/images/pericloud.jpg",
-      "link": "https://clemz.fr/pericloud",
+      "type": "3D Autres",
+      "title": "Pericloud - Projet web de restauration de cartes postales | 2024",
+      "description": "Projet de site web 3D interactif et de reconstitution de cartes postales en 3D. \nLogiciels : Blender (reconstitutions + fond du site)",
+      "image": "/téléchargement.png",
+      "link": "clemz.fr/pericloud",
       "isDemoReel": false
     },
     {
-      "id": "court-metrage",
+      "id": "stopmo",
       "type": "Vidéos",
-      "title": "Court-métrage",
-      "description": "Court-métrage de fin de licence, qui parle de deuil et qui rend un hommage à ma grand-mère. J'ai décidé de mélanger plusieurs techniques, en mélangeant 3D et prise de vue réelle.\nLogiciels : Unreal Engine, Illustrator, After Effects, Animashooter",
-      "image": "/images/court-metrage.jpg",
-      "link": "https://example.com/court-metrage",
+      "title": "Un nouveau départ | 2024",
+      "description": "Court-métrage en stop-motion. \nLogiciels : Premiere Pro",
+      "image": "/stopmo.png",
+      "link": "https://drive.google.com/file/d/1YfYFt-VeK2fDF4MS4M2AjWyi55_rEaxs/view?usp=sharing",
       "isDemoReel": false
     },
     {
-      "id": "diorama-2",
+      "id": "vert",
+      "type": "Vidéos Autres",
+      "title": "Renault 208 - Performance vidéo | 2024",
+      "description": "Performance vidéo réalisée dans le cadre de ma première année en master DPAN. Ecriture, réalisation, montage, jeu.\nLogiciels : Premiere Pro",
+      "image": "/perf.png",
+      "link": "https://drive.google.com/file/d/1f6lxqVOxoGKSz_Nt6__KrK9vN7egGmab/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "sorciere",
+      "type": "Autres",
+      "title": "Sorcières - Expérience sonore | 2024",
+      "description": "Exercice d'expérience sonore sur le thème de la schizophrénie. \nLogiciels : Audition, Reaper",
+      "image": "/sorciere.png",
+      "link": "https://drive.google.com/file/d/1Zboa27cyilrf3n4JR8O7MzxIi2HLvWEk/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "transitions",
+      "type": "Vidéos",
+      "title": "14 decembre | 2023",
+      "description": "Exercice de transitions originales. \nLogiciels : Premiere Pro",
+      "image": "/decembre.png",
+      "link": "https://drive.google.com/file/d/1RmJ9YS2FFMgxqEDksSjd3wpcuUb72VQq/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "coupdefil",
+      "type": "Vidéos",
+      "title": "Coup de fil | 2023",
+      "description": "Court-métrage sur le thème du deuil. Mélange d'environnement 3D intégrant des personnages en laine faits maison. \nLogiciels : Unreal Engine, Premiere Pro",
+      "image": "/coupdefil.png",
+      "link": "https://drive.google.com/file/d/1-2UBBIn4CTWRKeaQ5iMgyESG05raN9g3/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "pants",
+      "type": "Vidéos",
+      "title": "Générique - Le pantalon | 2023",
+      "description": "Générique fictive du film Le Pantalon par Yves Boisset. Ecritude, réalisation, montage, colorimétrie.  \nLogiciels : After Effects, Premiere Pro",
+      "image": "/pant.png",
+      "link": "https://drive.google.com/file/d/1lEjUMapiQxOO7Vsc5xOYL-vRl7Nqx9Au/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "amorazul",
+      "type": "Vidéos",
+      "title": "Amor Azul | 2023",
+      "description": "Court-métrage réalisé dans le cadre de ma licence pro. Sur le thème des gravure de Dali pour le musée Goya. \nLogiciels : Premiere Pro, After Effects",
+      "image": "/azul.png",
+      "link": "https://drive.google.com/file/d/1EP9ta5gKCY5UUnFega3iRq7G4h2xUQR-/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "typo",
+      "type": "Autres",
+      "title": "Time Travel - Essai de typographie | 2023",
+      "description": "Création typographique. Inspirations : écritures cunéiformes, Mésopotamie. \nLogiciels : Illustrator, Photoshop",
+      "image": "/typo.png",
+      "link": "https://drive.google.com/file/d/1EP9ta5gKCY5UUnFega3iRq7G4h2xUQR-/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "choco",
       "type": "3D",
-      "title": "Diorama 2",
-      "description": "Diorama réalisé dans le cadre de ma deuxième année en master XR. Inspirations automnale, witchy, cottage.\nLogiciels : Blender (modélisation), Unity (intégration + simulation de particules), Substance 3D Painter (textures).",
-      "image": "/images/diorama-2.jpg",
-      "link": "https://example.com/diorama-2",
+      "title": "Chocolatine | 2022",
+      "description": "Petite animation test de grease pencil. \nLogiciels : Blender",
+      "image": "/Paing.png",
+      "link": "https://drive.google.com/file/d/1jTZMtkAbvt0jl1nky9LarZCEqqPMkPjk/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "plage",
+      "type": "3D",
+      "title": "Plage | 2022",
+      "description": "Petite animation simple. \nLogiciels : Blender",
+      "image": "/plage.png",
+      "link": "https://drive.google.com/file/d/1vU2GlLDaRy4Eclo5O18ghRkGkdiw-fVU/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "verre",
+      "type": "3D",
+      "title": "Grenadine | 2022",
+      "description": "Test de texture de verre et de liquide. \nLogiciels : Blender",
+      "image": "/verreeau.png",
+      "isDemoReel": false
+    },
+    {
+      "id": "bijou",
+      "type": "Vidéos",
+      "title": "Pub Bijou | 2022",
+      "description": "Exercice de publicité fictive dans le cadre de mon DUT MMI. Réalisation, jeu, montage. \nLogiciels : Premiere pro",
+      "image": "/bijou.png",
+      "link": "https://drive.google.com/file/d/1cSV159IfshNw-bHdxAVJCCDguAtllGbK/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "marche",
+      "type": "Vidéos",
+      "title": "Exercice Marche | 2021",
+      "description": "Exercice de production d'une vidéo sur le thème de la marche. Réalisation, jeu, montage. \nLogiciels : Premiere pro",
+      "image": "/marche.png",
+      "link": "https://drive.google.com/file/d/15Jlp7QiDuIofYeDRv8GGdKj317bR8RTC/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "clem",
+      "type": "Vidéos",
+      "title": "Exercice Clémentine | 2020",
+      "description": "Exercice de production d'une vidéo sur musique imposée. Réalisation, jeu, montage. \nLogiciels : Premiere pro",
+      "image": "/clems.png",
+      "link": "https://drive.google.com/file/d/1Tdhaiw1lhsQzsIfH-D17MnqqTxPUrrHC/view?usp=sharing",
       "isDemoReel": false
     }
   ],

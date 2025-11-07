@@ -16,12 +16,20 @@ export default function Productions() {
   const productions = allProductions.filter((production) => {
     if (selectedFilter === 'Tout') {
       return true;
-    } else if (selectedFilter === '3D/Vidéos/XR') {
-      return ['3D', 'Vidéos', 'XR'].includes(production.type);
+    }
+    
+    // Séparer les types par espaces pour gérer les types multiples
+    const productionTypes = production.type.split(' ').filter(t => t.length > 0);
+    
+    if (selectedFilter === '3D/Vidéos/XR') {
+      const filterTypes = ['3D', 'Vidéos', 'XR'];
+      return productionTypes.some(type => filterTypes.includes(type));
     } else if (selectedFilter === 'Photos') {
-      return ['Photos', 'Photographies'].includes(production.type);
+      const filterTypes = ['Photos', 'Photographies'];
+      return productionTypes.some(type => filterTypes.includes(type));
     } else if (selectedFilter === 'Autres') {
-      return ['Autres', '2D'].includes(production.type);
+      const filterTypes = ['Autres', '2D'];
+      return productionTypes.some(type => filterTypes.includes(type));
     }
     return true;
   });
@@ -62,6 +70,25 @@ export default function Productions() {
       }
     }
   }, []);
+
+  // Fonction pour vérifier si un lien est externe
+  const isExternalLink = (link: string | undefined): boolean => {
+    if (!link) return false;
+    return link.startsWith('http://') || link.startsWith('https://');
+  };
+
+  // Fonction pour obtenir l'URL complète du lien
+  const getLinkUrl = (link: string | undefined): string => {
+    if (!link) return '#';
+    if (isExternalLink(link)) {
+      return link;
+    }
+    // Si le lien ne commence pas par http, on assume que c'est une URL externe complète
+    if (link.startsWith('//')) {
+      return `https:${link}`;
+    }
+    return link;
+  };
 
   // Réinitialiser le scroll quand le filtre change
   useEffect(() => {
@@ -203,41 +230,90 @@ export default function Productions() {
                                 {production.type}
                               </span>
                             </div>
-                            <h3 className="text-2xl font-light text-[var(--text-dark)] mb-4">
-                              {production.title}
-                            </h3>
+                            {production.link ? (
+                              <a
+                                href={getLinkUrl(production.link)}
+                                target={isExternalLink(production.link) ? '_blank' : '_self'}
+                                rel={isExternalLink(production.link) ? 'noopener noreferrer' : undefined}
+                                className="text-2xl font-light text-[var(--text-dark)] mb-4 hover:opacity-70 transition-opacity cursor-pointer"
+                              >
+                                {production.title}
+                              </a>
+                            ) : (
+                              <h3 className="text-2xl font-light text-[var(--text-dark)] mb-4">
+                                {production.title}
+                              </h3>
+                            )}
                             <p className="text-md text-[var(--text-dark)]/80 leading-relaxed flex-grow whitespace-pre-line">
                               {production.description}
                             </p>
                           </div>
                           
                           {/* Image en bas */}
-                          <div className="relative w-full aspect-[4/3] bg-[var(--accent)] overflow-hidden">
-                            {production.image && (
-                              <Image
-                                src={production.image}
-                                alt={production.title}
-                                fill
-                                className="object-cover"
-                                unoptimized
-                              />
-                            )}
-                          </div>
+                          {production.link ? (
+                            <a
+                              href={getLinkUrl(production.link)}
+                              target={isExternalLink(production.link) ? '_blank' : '_self'}
+                              rel={isExternalLink(production.link) ? 'noopener noreferrer' : undefined}
+                              className="relative w-full aspect-[4/3] bg-[var(--accent)] overflow-hidden block hover:opacity-90 transition-opacity cursor-pointer"
+                            >
+                              {production.image && (
+                                <Image
+                                  src={"/clementine/"+ production.image}
+                                  alt={production.title}
+                                  fill
+                                  className="object-cover"
+                                  unoptimized
+                                />
+                              )}
+                            </a>
+                          ) : (
+                            <div className="relative w-full aspect-[4/3] bg-[var(--accent)] overflow-hidden">
+                              {production.image && (
+                                <Image
+                                  src={production.image}
+                                  alt={production.title}
+                                  fill
+                                  className="object-cover"
+                                  unoptimized
+                                />
+                              )}
+                            </div>
+                          )}
                         </>
                       ) : (
                         <>
                           {/* Image en haut */}
-                          <div className="relative w-full aspect-[4/3] bg-[var(--accent)] overflow-hidden">
-                            {production.image && (
-                              <Image
-                                src={production.image}
-                                alt={production.title}
-                                fill
-                                className="object-cover"
-                                unoptimized
-                              />
-                            )}
-                          </div>
+                          {production.link ? (
+                            <a
+                              href={getLinkUrl(production.link)}
+                              target={isExternalLink(production.link) ? '_blank' : '_self'}
+                              rel={isExternalLink(production.link) ? 'noopener noreferrer' : undefined}
+                              className="relative w-full aspect-[4/3] bg-[var(--accent)] overflow-hidden block hover:opacity-90 transition-opacity cursor-pointer"
+                            >
+                              {production.image && (
+                                <Image
+                                  src={"/clementine/" + production.image}
+                                  alt={production.title}
+                                  fill
+                                  className="object-cover"
+                                  unoptimized
+                                />
+                              )}
+                            </a>
+                          ) : (
+                            <div className="relative w-full aspect-[4/3] bg-[var(--accent)] overflow-hidden">
+                              {production.image && (
+                                <Image
+                                  src={production.image}
+                                  alt={production.title}
+                                  fill
+                                  className="object-cover"
+                                  unoptimized
+                                />
+                              )}
+                            </div>
+                          )}
 
                           {/* Description en bas */}
                           <div className="p-6 flex flex-col flex-grow">
@@ -246,9 +322,20 @@ export default function Productions() {
                                 {production.type}
                               </span>
                             </div>
-                            <h3 className="text-2xl font-light text-[var(--text-dark)] mb-4">
-                              {production.title}
-                            </h3>
+                            {production.link ? (
+                              <a
+                                href={getLinkUrl(production.link)}
+                                target={isExternalLink(production.link) ? '_blank' : '_self'}
+                                rel={isExternalLink(production.link) ? 'noopener noreferrer' : undefined}
+                                className="text-2xl font-light text-[var(--text-dark)] mb-4 hover:opacity-70 transition-opacity cursor-pointer"
+                              >
+                                {production.title}
+                              </a>
+                            ) : (
+                              <h3 className="text-2xl font-light text-[var(--text-dark)] mb-4">
+                                {production.title}
+                              </h3>
+                            )}
                             <p className="text-md text-[var(--text-dark)]/80 leading-relaxed flex-grow whitespace-pre-line">
                               {production.description}
                             </p>
