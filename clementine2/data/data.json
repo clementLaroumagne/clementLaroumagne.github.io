@@ -23,7 +23,7 @@
     },
     {
       "id": "malvina",
-      "type": "Vidéos",
+      "type": "XR Vidéos",
       "title": "Malvina | 2025",
       "description": "Court-métrage 3D à 360° sur le thème des enfants de parents atteints de troubles mentaux. \nLogiciels : Blender (environnement, texturing, render) Photoshop, Premiere Pro.",
       "image": "/Malvina.png",
@@ -73,6 +73,24 @@
       "description": "Diorama réalisé dans le cadre de ma deuxième année en master XR. Inspirations automnale, witchy, cottage.\nLogiciels : Blender (modélisation), Unity (intégration + simulation de particules), Substance 3D Painter (textures).",
       "image": "/Diorama.png",
       "link": "https://drive.google.com/file/d/1849JrLVuJTwEnZISnDIcyzF_fbO61Nld/view?usp=sharing",
+      "isDemoReel": false
+    },
+    {
+      "id": "orgue",
+      "type": "XR Vidéos",
+      "title": "L'Orgue | 2025",
+      "description": "Vidéos de captation 360° réalisé dans le cadre d'un exercice. \nLogiciels : Davinci Resolve ",
+      "image": "/orgue.png",
+      "link": "https://www.youtube.com/watch?v=U61MrlxPEkI",
+      "isDemoReel": false
+    },
+    {
+      "id": "mocap",
+      "type": "XR Autres",
+      "title": "Avatar | 2025",
+      "description": "Captation téléphone d'un exercice de modélisation et de rigging d'un personnage et test de motion-capture. \nLogiciels : Blender, Metahuman, Trinoma",
+      "image": "/mocap.jpg",
+      "link": "https://drive.google.com/file/d/1IwxHU0VQmpZzztuiEx8iw3DuDspavjaq/view?usp=sharing",
       "isDemoReel": false
     },
     {
