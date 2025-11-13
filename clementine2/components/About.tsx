@@ -17,11 +17,11 @@ export default function About({ onSectionChange }: AboutProps) {
     >
       <div className="max-w-7xl mx-auto">
         {/* Structure en trois colonnes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 lg:gap-20 items-start !px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 lg:gap-20 items-start !px-8 !py-8">
           {/* Colonne gauche */}
           <div className="flex flex-col space-y-8 items-center gap-8">
             {/* Titre principal */}
-            <h2 className="w-full text-5xl md:text-6xl text-center !mb-16 font-serif text-[var(--accent)] tracking-wide mt-8 md:mt-0">
+            <h2 className="w-full text-5xl md:text-6xl text-center !mb-4 md:!mb-16 font-serif text-[var(--accent)] tracking-wide mt-8 md:mt-0">
               À propos
             </h2>
             
