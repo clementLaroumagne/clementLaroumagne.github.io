@@ -27,6 +27,7 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/xio7dzt.css" />
+        <script defer src="https://umami.clemz.fr/script.js" data-website-id="509b9a84-432c-44f2-89a7-dec2240e42ef"></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
